@@ -1,0 +1,15 @@
+PON AQUÍ TUS 5 FOTOS
+
+Guárdalas en esta carpeta (static/fotos/) con estos nombres exactos:
+
+    foto1.jpg
+    foto2.jpg
+    foto3.jpg
+    foto4.jpg
+    foto5.jpg
+
+También sirven .jpeg, .png, .webp o .gif con el mismo nombre
+(por ejemplo: foto3.png).
+
+Si alguna falta, en su lugar aparece un corazón dibujado con código.
+No hay que tocar nada más: al recargar la página se cargan solas.

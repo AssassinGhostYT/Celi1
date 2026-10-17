@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.env
+.DS_Store
+static/fotos/foto*.jpg
+static/fotos/foto*.jpeg
+static/fotos/foto*.png
+static/fotos/foto*.webp
+static/fotos/foto*.gif
