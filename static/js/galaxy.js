@@ -130,20 +130,22 @@
     palEls.push(el);
   });
 
+  function ponerPlaceholder(el) {
+    el.classList.add('foto-vacia');
+    el.innerHTML = '';
+    const h = document.createElement('span');
+    h.className = 'mini-corazon';
+    el.appendChild(h);
+  }
+
   for (let i = 0; i < 5; i++) {
     const el = document.createElement('div');
     el.className = 'foto';
-    if (FOTOS[i]) {
-      const img = document.createElement('img');
-      img.src = FOTOS[i];
-      img.alt = 'Nuestra foto ' + (i + 1);
-      el.appendChild(img);
-    } else {
-      el.classList.add('foto-vacia');
-      const h = document.createElement('span');
-      h.className = 'mini-corazon';
-      el.appendChild(h);
-    }
+    const img = document.createElement('img');
+    img.src = FOTOS[i] || `static/fotos/foto${i + 1}.jpg`;
+    img.alt = 'Nuestra foto ' + (i + 1);
+    img.onerror = () => ponerPlaceholder(el);
+    el.appendChild(img);
     contFotos.appendChild(el);
     fotEls.push(el);
   }

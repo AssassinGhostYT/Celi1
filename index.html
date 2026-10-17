@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="static/css/style.css" />
 </head>
 <body>
   <canvas id="cielo"></canvas>
@@ -27,8 +27,14 @@
   <button id="recentrar" type="button" title="Volver al centro">⌖</button>
 
   <script>
-    window.FOTOS = {{ fotos | tojson }};
+    window.FOTOS = [
+      'static/fotos/foto1.jpg',
+      'static/fotos/foto2.jpg',
+      'static/fotos/foto3.jpg',
+      'static/fotos/foto4.jpg',
+      'static/fotos/foto5.jpg'
+    ];
   </script>
-  <script src="/static/js/galaxy.js"></script>
+  <script src="static/js/galaxy.js"></script>
 </body>
 </html>
